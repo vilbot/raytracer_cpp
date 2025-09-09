@@ -1,0 +1,10 @@
+^C:\USERS\VILGOT\PROJECTS\RAYTRACER_CPP\BUILD\CMAKEFILES\D618BD3CDD65C595D817FE853EA7B9B1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Vilgot/Projects/raytracer_cpp -BC:/Users/Vilgot/Projects/raytracer_cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Vilgot/Projects/raytracer_cpp/build/Project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
