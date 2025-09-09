@@ -1,3 +1,4 @@
+- How to download and upload
 run
 
 git pull
@@ -9,3 +10,14 @@ git commit -m "Commit message"
 git push
 
 to upload new changes to github
+
+
+- How to create a new branch
+run
+
+git checkout -b chapter_x
+
+you are now on a new branch
+check branch with
+
+git branch
