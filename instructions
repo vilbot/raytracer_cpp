@@ -1,0 +1,11 @@
+run
+
+git pull
+
+to get latest changes, then run
+
+git add .
+git commit -m "Commit message"
+git push
+
+to upload new changes to github
