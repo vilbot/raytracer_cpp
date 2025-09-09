@@ -11,4 +11,8 @@ public:
         void print();
 };
 
+Color operator+(const Color& a, const Color& b);
+Color operator-(const Color& a, const Color& b);
+Color operator*(const Color& a, int n);
+Color operator*(int n, const Color& a);
 #endif
