@@ -1,4 +1,4 @@
-#include "tuple.hpp"
+#include "tuple.h"
 
 Tuple::Tuple(double x, double y, double z, double w) {
         this->x = x;

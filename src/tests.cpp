@@ -1,4 +1,4 @@
-#include "includes.hpp" 
+#include "includes.h" 
 
 typedef struct {
         Point position;
@@ -27,11 +27,7 @@ void putting_it_together_ch1() {
 }
 
 int main() {
-        Color c1 = Color(0.9, 0.6, 0.75);
-        Color c2 = Color(0.7, 0.1, 0.25);
-        Color c3 = c1 - c2;
-        // c3.print();
-
-        Color c4 = Color(0.2, 0.3, 0.4);
-        (2 * c4).print();
+        Color c1 = Color(1, 0.2, 0.4);
+        Color c2 = Color(0.9, 1, 0.1);
+        (c1 * c2).print();
 }
