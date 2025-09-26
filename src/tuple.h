@@ -1,5 +1,5 @@
-#ifndef TUPLE_HPP
-#define TUPLE_HPP
+#ifndef TUPLE_H
+#define TUPLE_H
 
 #include <iostream>
 #include <stdio.h>
@@ -52,6 +52,8 @@ Point operator-(const Point& a);
 Vector operator-(const Vector& a);
 Tuple operator*(const Tuple& a, const double& b);
 Tuple operator*(const double& b, const Tuple& a);
+Vector operator*(const Vector& a, const double& b);
+Vector operator*(const double& b, const Vector& a);
 Tuple operator/(const Tuple& a, const double& b);
 
 #endif

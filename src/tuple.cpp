@@ -145,6 +145,14 @@ Tuple operator*(const double& b, const Tuple& a) {
         return Tuple(a.x * b, a.y * b, a.z * b, a.w * b);
 }
 
+Vector operator*(const Vector& a, const double& b) {
+        return Vector(a.x * b, a.y * b, a.z * b);
+}
+
+Vector operator*(const double& b, const Vector& a) {
+        return Vector(a.x * b, a.y * b, a.z * b);
+}
+
 Tuple operator/(const Tuple& a, const double& b) {
         return Tuple(a.x / b, a.y / b, a.z / b, a.w / b);
 }

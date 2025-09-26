@@ -1,5 +1,5 @@
-#ifndef COLOR_HPP
-#define COLOR_HPP
+#ifndef COLOR_H
+#define COLOR_H
 
 #include <stdio.h>
 
@@ -13,11 +13,19 @@ public:
 };
 
 class Canvas {
+public:
         int width, height;
         Color* pixels;
 
         Canvas(int width, int height);
+
+        void write_pixel(int x, int y, Color rgb);
+        Color pixel_at(int x, int y);
 };
+
+Color pixel_at(Canvas* c, int x, int y);
+char* canvas_to_ppm(Canvas* c);
+int d_to_int(double a);
 
 Color operator+(const Color& a, const Color& b);
 Color operator-(const Color& a, const Color& b);
