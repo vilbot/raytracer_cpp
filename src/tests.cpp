@@ -46,7 +46,10 @@ void putting_it_together_ch2() {
 }
 
 int main() {
-        double matrix[16] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13, 14, 15, 16};
+        double matrix[4*4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13, 14, 15, 16};
+        double matrix2[4*4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11, 12, 13, 14, 15, 16};
         Matrix m = Matrix(4, 4, matrix);
-        m.print();
+        Matrix m2 = Matrix(4, 4, matrix2);
+        Matrix m3 = m * m2;
+        m3.print();
 }

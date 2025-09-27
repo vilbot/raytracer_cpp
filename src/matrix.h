@@ -1,16 +1,22 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-#include "includes.h"
+#include <stdio.h>
 
 class Matrix {
-public:
+private:
         int rows, cols;
-        double* grid;
 
+public:
+        double* grid;
         Matrix(int rows, int cols, double* grid);
+        int getRows() const;
+        int getCols() const;
         void print();
-        double at(int row, int col);
+        double at(int row, int col) const;
 };
+
+bool operator==(const Matrix& a, const Matrix& b);
+bool operator!=(const Matrix& a, const Matrix& b);
 
 #endif
